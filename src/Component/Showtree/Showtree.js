@@ -8,7 +8,7 @@ const element = <FontAwesomeIcon icon={faCartPlus} />
 
 const Showtree = (props) => {
     const {name , img , intro , price ,starCount } = props.tree;
-    console.log(props)
+    console.log(props.name , props )
     return (
         <div className="showtreesClass col-lg-4">
                <p>this is {name}</p>
