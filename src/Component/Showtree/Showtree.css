@@ -1,0 +1,9 @@
+.showtreesClass img{
+   width: 25%;
+   border-radius: 80%;
+}  
+.showtreesClass{
+    border: 1px solid lightcyan;
+    box-shadow: 0px 2px 120px lightgreen;
+
+}
