@@ -8,7 +8,7 @@ const element = <FontAwesomeIcon icon={faCartPlus} />
 
 const Showtree = (props) => {
     const {name , img , intro , price ,starCount } = props.tree;
-    console.log(props.name , props )
+   // console.log(props.name , props )
     return (
         <div className="showtreesClass col-lg-4">
                <p>this is {name}</p>
@@ -16,9 +16,9 @@ const Showtree = (props) => {
                 <p>{intro}</p>
                 <h5>Price : {price}</h5>
                 <h5>Star Count : {starCount}</h5>
-                <button className="btn btn btn-outline-success" > {element} click to ADD </button>
+                <button onClick={()=>props.clickhandle(props)} className="btn btn btn-outline-success" > {element} click to ADD </button>
                 
-                
+             
            
         </div>
     );
