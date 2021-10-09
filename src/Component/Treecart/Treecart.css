@@ -1,0 +1,10 @@
+.carttree{
+    background-color: #CDF2CA;
+    border-radius: 4%;
+}
+.carttree img{
+    border-radius:50px;
+   
+    width: 25%;
+    height: 70px;
+}

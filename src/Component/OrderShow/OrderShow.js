@@ -1,25 +1,23 @@
 import React, { useState } from 'react';
+import Sumcal from '../Sumcal/Sumcal';
 import Treecart from '../Treecart/Treecart';
 import './OrderShow.css'
 
 const OrderShow = (props) => {
     console.log( props);
    const treesdata = props.treesdata;
-   const treesname = props.treesname;
+  var sum=0;
     return (
         <div className="row">
-         <div className="col-lg-6">
-                {
-                    treesname.map((tre)=>
-                        <p>{tre}</p>
-                    )
-                }
-         </div>
+            
+       
 
-         <div className="col-lg-6">
+         <div >
                 {
                     treesdata.map((tre)=>
-                        <p>{tre}</p>
+                    
+                       <Treecart tre={tre}></Treecart>
+                       
                     )
                 }
          </div>

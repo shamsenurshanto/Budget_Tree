@@ -1,9 +1,13 @@
 .showtreesClass img{
-   width: 25%;
-   border-radius: 80%;
+   width: 50%;
+   border-radius: 10%;
+   height: 220px;
 }  
 .showtreesClass{
     border: 1px solid lightcyan;
     box-shadow: 0px 2px 120px lightgreen;
 
+}
+.showtreesClass img:hover{
+   
 }

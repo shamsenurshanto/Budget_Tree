@@ -1,23 +1,37 @@
 import React, { useEffect, useState } from 'react';
 import Order from '../Order/Order';
 import Showtree from '../Showtree/Showtree';
+import Sumcal from '../Sumcal/Sumcal';
 import './Placeholder.css'
 const Placeholder = () => {
 const [trees,setTrees] = useState([]);
 const [treesdata,settreesdata] = useState([]);
 const [treesname,settreesname] = useState([]);
-
+const [treesimage,settreesimage] = useState([]);
+var sum=0;
  const clickhandle = (props)=>{
-  const {price,name}=props.tree
+  const {price,name,img}=props.tree
+  // console.log(props.tree)
+ 
+  
 
-   const newtree = [...treesdata,price];
+   const newtree = [...treesdata,props.tree];
    settreesdata(newtree);
-   console.log(newtree);
-
-   const newtreename = [...treesname,name];
-   settreesname(newtreename);
-   console.log(newtreename);
+  //  console.log(price);
+   const id = document.getElementById('order_id');
+    var sp=parseFloat(id.innerText);
    
+    
+    sp+=price;
+   
+    console.log(sp.toFixed(2),id.innerText,price);
+    sp=sp.toFixed(2);
+    id.innerText=sp.toString();
+     
+
+   
+
+
   
  }
 useEffect(()=>{
@@ -47,9 +61,10 @@ useEffect(()=>{
                <div className="col-lg-3">
                  
                  
-                <div id="order_id">
-                        <h1>ksjdks</h1>
-                    <Order treesdata={treesdata} treesname={treesname}></Order>
+                <div >
+                   <h2>Total Cost : $ <span id="order_id">0</span> </h2>
+                       
+                    <Order treesdata={treesdata} ></Order>
                   
                 </div>
 
