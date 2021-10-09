@@ -62,7 +62,7 @@ useEffect(()=>{
                  
                  
                 <div >
-                   <h2>Total Cost : $ <span id="order_id">0</span> </h2>
+                   <h5 className="text-center">Total Cost : $ <span id="order_id">0</span> </h5>
                        
                     <Order treesdata={treesdata} ></Order>
                   
