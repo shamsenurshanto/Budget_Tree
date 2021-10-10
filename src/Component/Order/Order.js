@@ -19,7 +19,7 @@ const Order = (props) => {
             
         
      
-       <OrderShow treesdata={treesdata} ></OrderShow>
+       <OrderShow treesdata={treesdata} key="e"></OrderShow>
       </div>
     )
 

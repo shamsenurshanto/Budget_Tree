@@ -8,7 +8,7 @@ const Treecart = (props) => {
         <div className="col-lg-10  m-3 carttree">
           
          <div className="d-flex justify-content-start ">
-              <img className="me-3 ms-0 mt-2" src={props.tre.img}></img>
+              <img className="me-3 ms-2 mt-2" src={props.tre.img}></img>
              <div>
              <p >price: ${price}</p>
              <p className="m-0 p-0">name: {name}</p>

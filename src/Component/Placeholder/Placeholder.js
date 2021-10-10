@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Header from '../Header/Header';
 import Order from '../Order/Order';
 import Showtree from '../Showtree/Showtree';
 import Sumcal from '../Sumcal/Sumcal';
@@ -45,7 +46,10 @@ useEffect(()=>{
         
             
              <div className="row">
-             
+             <div className="col-lg-12">
+                 <Header></Header>
+
+             </div>
                
                <div className='col-lg-9 placeholderclass text-center'>
                     <div className='row'>
@@ -61,7 +65,7 @@ useEffect(()=>{
                <div className="col-lg-3">
                  
                  
-                <div >
+                <div  className="bcol">
                    <h5 className="text-center">Total Cost : $ <span id="order_id">0</span> </h5>
                        
                     <Order treesdata={treesdata} ></Order>
